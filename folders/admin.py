@@ -7,6 +7,8 @@ class FolderInline(admin.TabularInline):
     model = Folder
     readonly_fields = ['path']
     show_change_link = True
+    verbose_name = "Sub Folder"
+    verbose_name_plural = "Sub Folders"
 
 
 class FolderAdmin(admin.ModelAdmin):
